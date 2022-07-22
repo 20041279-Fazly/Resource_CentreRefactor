@@ -13,9 +13,25 @@ public class Item {
 	}
 	public String toString() {
 		// Write your codes here
+<<<<<<< HEAD
 		String itemInfo = String.format("%-10s %-30s %-10s %-10s", assetTag, 
 				description, showAvailability(isAvailable), dueDate);
 		return itemInfo;
+=======
+		return String.format("%-10s %-30s %-10s %-10s", getAssetTag(), getDescription(), showAvailability(getIsAvailable()),getDueDate());
+	}
+	
+	public String showAvailability(boolean isAvailable) {
+		String avail = "";
+		
+		if (isAvailable == true) {
+			avail = "Yes";
+		}
+		else {
+			avail = "No";
+		}
+		return avail;
+>>>>>>> branch 'master' of https://github.com/20041279-Fazly/Resource_CentreRefactor.git
 	}
 	
 	public String showAvailability(boolean isAvailable) {

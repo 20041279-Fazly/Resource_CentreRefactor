@@ -151,6 +151,10 @@ public class ResourceCentre {
 		String output = "";
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/20041279-Fazly/Resource_CentreRefactor.git
 			output += String.format("%-84s\n", chromebookList.get(i).toString());
 		}
 		
@@ -205,8 +209,10 @@ public class ResourceCentre {
 		for (int i = 0; i < camcorderList.size(); i++) {
 			
 			
-			if (tag.equalsIgnoreCase(camcorderList.get(i).getAssetTag())				
-					&& camcorderList.get(i).getIsAvailable() == true) {
+			String assetTag = camcorderList.get(i).getAssetTag();
+			boolean isAvailable = camcorderList.get(i).getIsAvailable();
+			if (tag.equalsIgnoreCase(assetTag)				
+					&& isAvailable == true) {
 				
 				camcorderList.get(i).setIsAvailable(false);
 				camcorderList.get(i).setDueDate(dueDate);
