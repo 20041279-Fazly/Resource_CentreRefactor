@@ -151,10 +151,6 @@ public class ResourceCentre {
 		String output = "";
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/20041279-Fazly/Resource_CentreRefactor.git
 			output += String.format("%-84s\n", chromebookList.get(i).toString());
 		}
 		
