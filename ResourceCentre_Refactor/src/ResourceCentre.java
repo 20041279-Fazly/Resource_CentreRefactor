@@ -172,7 +172,7 @@ public class ResourceCentre {
 		String description = Helper.readString("Enter description > ");
 		int zoom = Helper.readInt("Enter optical zoom > ");
 
-		Camcorder cc= new Camcorder(tag, description, zoom);
+		Camcorder cc= new Camcorder(tag, description, zoom);d
 		return cc;
 		
 	}

@@ -9,6 +9,7 @@ public class Camcorder extends Item{
 
 	public int getOpticalZoom() {
 		return opticalZoom;
+<<<<<<< HEAD
 	}
 	
 	public String toString(){
@@ -17,6 +18,15 @@ public class Camcorder extends Item{
 		output = String.format("%-63s %-20d", output, opticalZoom);
 		
 		return output;
+=======
+	}
+
+	public String toString(){
+		// Write your codes here
+		String info = super.toString();
+		
+		return String.format("%-63s %-20d", info , opticalZoom);
+>>>>>>> branch 'master' of https://github.com/20041279-Fazly/Resource_CentreRefactor.git
 	}
 }
 

@@ -18,7 +18,7 @@ public class Item {
 				description, 
 				showAvailability(isAvailable),
 				dueDate);
-		return itemInfo;
+		return itemInfo;//must rem
 	}
 	
 	public String showAvailability(boolean isAvailable) {
