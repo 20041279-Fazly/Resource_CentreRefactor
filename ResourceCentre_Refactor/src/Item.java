@@ -14,15 +14,14 @@ public class Item {
 	public String toString() {
 		
 		// Write your codes here
-		String itemInfo = String.format("%-10s %-30s %-10s %-10s", 
-				assetTag,
+		String itemInfo = String.format("%-10s %-30s %-10s %-10s", assetTag,
 				description, 
-				ResourceCentre.showAvailability(isAvailable),
+				showAvailability(isAvailable),
 				dueDate);
-		return itemInfo;
+		return itemInfo;//must rem
 	}
 	
-	public static String showAvailability(boolean isAvailable) {
+	public String showAvailability(boolean isAvailable) {
 		String avail;
 
 		if (isAvailable == true) {
@@ -32,7 +31,7 @@ public class Item {
 		}
 		return avail;
 	}
-	
+		
 	public String getAssetTag() {
 		return assetTag;
 	}

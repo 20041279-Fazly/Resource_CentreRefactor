@@ -86,7 +86,7 @@ public class ResourceCentre {
 					System.out.println("Invalid type");
 				}
 
-			} else if (option == 5) {
+			} else if (option == OPTION_QUIT) {
 				System.out.println("Bye!");
 			} else {
 				System.out.println("Invalid option");
@@ -172,7 +172,7 @@ public class ResourceCentre {
 		String description = Helper.readString("Enter description > ");
 		int zoom = Helper.readInt("Enter optical zoom > ");
 
-		Camcorder cc= new Camcorder(tag, description, zoom);
+		Camcorder cc= new Camcorder(tag, description, zoom);d
 		return cc;
 		
 	}
@@ -237,7 +237,8 @@ public class ResourceCentre {
 
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
+			String assetTag = chromebookList.get(i).getAssetTag();
+			if (tag.equalsIgnoreCase(assetTag)
 					
 					&& chromebookList.get(i).getIsAvailable() == true) {
 				
